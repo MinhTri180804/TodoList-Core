@@ -55,6 +55,9 @@ export default function Todo({ name, id, priority, completed }) {
       style={{
         marginBottom: 3,
         ...(checked ? { opacity: 0.5, textDecoration: "line-through" } : {}),
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems : "center"
       }}
     >
       <Checkbox checked={checked} onChange={toggleCheckbox}>
